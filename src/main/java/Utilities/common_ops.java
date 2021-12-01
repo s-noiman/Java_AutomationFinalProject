@@ -1,6 +1,7 @@
 package Utilities;
 
 import Extenstions.UI_actions;
+import Extenstions.verifications;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -124,7 +125,7 @@ public class common_ops extends base {
 //    @Parameters({"PlatformName"})String PlatformName
     public void startSession() {
 //        platform = PlatformName;
-        platform = "web";
+        platform = "api";
         if (platform.equalsIgnoreCase("web"))
             init_browser(get_data("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile")) {
@@ -140,8 +141,8 @@ public class common_ops extends base {
 
     @AfterMethod
     public void afterMethod() {
-        if (platform.equalsIgnoreCase("web"))
-            driver.get(get_data("url"));
+        if (platform.equalsIgnoreCase("api"))
+            verifications.number_value(http_request_status_code,  200, "Error in http requesting");
         else if(platform.equalsIgnoreCase("mobile")) {
 //            work_flows.mobileFlows.backToHomePage();
         }
@@ -153,8 +154,6 @@ public class common_ops extends base {
         if (!platform.equalsIgnoreCase("api"))
         {
             if(!platform.equalsIgnoreCase("mobile")) {
-                UI_actions.click(_personal_area.darkThemeBtn);
-                UI_actions.click(_personal_area.saveChangesBtn);
                 driver.quit();
             }
             else {
@@ -162,4 +161,5 @@ public class common_ops extends base {
             }
         }
     }
+
 }

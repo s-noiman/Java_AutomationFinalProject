@@ -30,6 +30,11 @@ public class verifications extends common_ops {
         assertEquals(actual_text, expected_text, massage);
     }
 
+    @Step("Verify the actual number is the same as expected number")
+    public static void number_value(int actual_number, int expected_number, String massage) {
+        assertEquals(actual_number, expected_number, massage);
+    }
+
     @Step("Verify all actual texts is the same as expects text")
     public static void string_values(List<String> actual_texts, List<String> expected_texts, String massage) {
         soft_assert = new SoftAssert();

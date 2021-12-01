@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class personal_area_page {
 
-    @FindBy(css = "#reactRoot > div > nav > div.css-1y6y4so > div.css-1cd0a4j.dropdown > a > span > div > svg")
+    @FindBy(how = How.XPATH, using = "//*[@id='reactRoot']/div/nav/div[2]/div[6]/a")
     public WebElement configurationBtn;
 
 
@@ -50,10 +50,10 @@ public class personal_area_page {
 
     // user_personal_actions
 
-    @FindBy(css = "span > img")
+    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div:nth-child(1) > a > span > img")
     public WebElement btn_user_actions_navigate;
 
-    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div.css-13ke808.dropdown.dropup > ul > li:nth-child(4) > a")
+    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div:nth-child(1) > ul > li:nth-child(4) > a")
     public WebElement btn_sign_out;
 
 }

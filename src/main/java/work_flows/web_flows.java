@@ -11,7 +11,7 @@ import org.sikuli.script.FindFailed;
 import java.util.Arrays;
 import java.util.List;
 
-public class web_Flows extends common_ops {
+public class web_flows extends common_ops {
 
     @Step("Login Grafana flow with credentials from DB.")
     public static void log_in(int user_id) throws FindFailed {
@@ -27,7 +27,7 @@ public class web_Flows extends common_ops {
     }
 
     @Step("Specific plugin searching.")
-    public static void search_plugin(String search_text) {
+    public static void search_plugin(String search_text) throws FindFailed {
         UI_actions.click(_personal_area.configurationBtn);
         UI_actions.click(_personal_area.Plug);
         auxiliary_methods.sleep(3);
@@ -49,6 +49,12 @@ public class web_Flows extends common_ops {
         UI_actions.click(_personal_area.saveChangesBtn);
         auxiliary_methods.sleep(1);
         return _personal_area.pageContainer.getCssValue("background-color");
+    }
+
+    @Step
+    public static void change_to_dark_mode() {
+        UI_actions.click(_personal_area.darkThemeBtn);
+        UI_actions.click(_personal_area.saveChangesBtn);
     }
 
     @Step("Log out Grafana.")

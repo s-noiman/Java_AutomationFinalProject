@@ -17,7 +17,7 @@
     <!-- Web -->
     <BrowserName>Chrome</BrowserName>
     <url>http://localhost:3000/login</url>
-    <ImageRepo>./Image_repository/</ImageRepo>
+    <ImageRepo>C:/Java_AutomationFinalProject/Image_repository/</ImageRepo>
 
 
 

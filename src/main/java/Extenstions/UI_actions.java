@@ -34,7 +34,7 @@ public class UI_actions extends common_ops {
 
     @Step("Click on element by sikuli")
     public static void sikuli_click(String img_name) throws FindFailed {
-        screen.click("./Image_repository/Login_btn.png");
+        screen.click( get_data("ImageRepo") + img_name + ".png");
     }
 
 

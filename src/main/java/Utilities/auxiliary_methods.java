@@ -34,5 +34,12 @@ public class auxiliary_methods extends common_ops{
         }
     }
 
+    @Step("Print result")
+    public static void print_response(String header) {
+        System.out.println("\n--  " + header + "  --");
+        response.prettyPrint();
+        System.out.println("\n");
+    }
+
 
 }
