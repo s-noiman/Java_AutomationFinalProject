@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Enviroment>
+
+    <!-- DB -->
+    <DBURL>jdbc:mysql://remotemysql.com:3306/RtSQRMWl6c</DBURL>
+    <DBUserName>RtSQRMWl6c</DBUserName>
+    <DBPassword>1BFLkm0d0b</DBPassword>
+
+    <!-- Timeout -->
+    <Timeout>2</Timeout>
+
+    <!-- RecordRepositoryPath -->
+    <RecordRepo>./Record_repository/</RecordRepo>
+
+
+    <!-- Web -->
+    <BrowserName>Chrome</BrowserName>
+    <url>http://localhost:3000/login</url>
+    <ImageRepo>./imageRepository/</ImageRepo>
+
+    <!-- Mobile -->
+    <UDID>orlzirqsofxc89so</UDID>
+    <APP_PACKAGE>com.avaza.AvazaCordova</APP_PACKAGE>
+    <APP_ACTIVITY>.MainActivity</APP_ACTIVITY>
+
+    <!-- API -->
+    <!-- Avaza API -->
+    <Grafana_API_URL>http://localhost:3000/api/</Grafana_API_URL>
+
+    <!-- OpenWeatherMap API -->
+    <OpenWeatherMapTokenAPIURL>http://api.openweathermap.org/data/2.5/weather</OpenWeatherMapTokenAPIURL>
+    <OpenWeatherMapToken>e24d6bd1b67f9ac5d4a8e5343632fbac</OpenWeatherMapToken>
+    <CityToCheckWeather>Rishon LeZiyyon, IL</CityToCheckWeather>
+
+    <!-- Chuck Norris Jokes API -->
+    <ChuckNorrisJokesAPIURL>https://api.chucknorris.io/jokes/random</ChuckNorrisJokesAPIURL>
+
+</Enviroment>
