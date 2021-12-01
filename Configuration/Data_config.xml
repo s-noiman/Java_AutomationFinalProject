@@ -2,7 +2,6 @@
 <Enviroment>
 
     <!-- DB -->
-
     <DBURL>jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6455258</DBURL>
     <DBUserName>sql6455258</DBUserName>
     <DBPassword>JGVasMpwHb</DBPassword>
@@ -13,12 +12,10 @@
     <!-- RecordRepositoryPath -->
     <RecordRepo>./Record_repository/</RecordRepo>
 
-
     <!-- Web -->
     <BrowserName>Chrome</BrowserName>
     <url>http://localhost:3000/login</url>
     <ImageRepo>C:/Java_AutomationFinalProject/Image_repository/</ImageRepo>
-
 
     <!-- Mobile -->
     <UDID>R58M944ZE2A</UDID>
@@ -28,20 +25,11 @@
     <!-- Desktop -->
     <app>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</app>
 
+    <!-- Electron -->
+    <ElectronDriverURL>C:/electrondriver-v3.1.2-win32-x64/electrondriver.exe</ElectronDriverURL>
+    <ElectURL>C:/Users/snoim/AppData/Local/Programs/todolist/Todolist.exe</ElectURL>
 
-
-
-
-    <!-- API -->
-    <!-- Avaza API -->
+    <!-- Grafana API -->
     <Grafana_API_URL>http://localhost:3000/api/</Grafana_API_URL>
-
-    <!-- OpenWeatherMap API -->
-    <OpenWeatherMapTokenAPIURL>http://api.openweathermap.org/data/2.5/weather</OpenWeatherMapTokenAPIURL>
-    <OpenWeatherMapToken>e24d6bd1b67f9ac5d4a8e5343632fbac</OpenWeatherMapToken>
-    <CityToCheckWeather>Rishon LeZiyyon, IL</CityToCheckWeather>
-
-    <!-- Chuck Norris Jokes API -->
-    <ChuckNorrisJokesAPIURL>https://api.chucknorris.io/jokes/random</ChuckNorrisJokesAPIURL>
 
 </Enviroment>

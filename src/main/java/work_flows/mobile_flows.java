@@ -1,6 +1,7 @@
 package work_flows;
 
 import Extenstions.UI_actions;
+import Extenstions.verifications;
 import Utilities.common_ops;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -41,6 +42,7 @@ public class mobile_flows extends common_ops {
     public static void Delete_Assigment() {
         UI_actions.click(_main_page.getDelete_btn());
         UI_actions.click(_main_page.getPOPUP());
+        verifications.is_elem_exists_without_wait(_main_page.getDelete_btn(), false, "");
     }
 
 }

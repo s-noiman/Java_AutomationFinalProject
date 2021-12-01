@@ -14,6 +14,9 @@ public class manage_pages extends base
         //Desktop page objects initialization.
         _calc_page = PageFactory.initElements(windows_driver, Page_objects.Desktop.Calculator_page.class);
 
+        //
+        _todo = PageFactory.initElements(driver, Page_objects.Electron.todo_page.class);
+
     }
 
     //Initializing mobile driver.

@@ -11,6 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -103,6 +104,7 @@ public class common_ops extends base {
     public static void init_API() {
         RestAssured.baseURI = get_data("Grafana_API_URL");
         http_request = RestAssured.given();
+        http_request_url = get_data("Grafana_API_URL");
     }
 
     public static void init_mobile() {
@@ -129,20 +131,37 @@ public class common_ops extends base {
         windows_driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
+    public static void init_electron() {
+        System.setProperty("webdriver.chrome.driver", get_data("ElectronDriverURL"));
+        opt = new ChromeOptions();
+        opt.setBinary(get_data("ElectURL"));
+        desired_capabilities = new DesiredCapabilities();
+        desired_capabilities.setCapability("chromeOptions", opt);
+        desired_capabilities.setBrowserName("chrome");
+        opt.merge(desired_capabilities);
+        driver = new ChromeDriver(opt);
+        action = new Actions(driver);
+    }
+
+
+
     @BeforeClass
-//    @Parameters({"PlatformName"})String PlatformName
-    public void startSession() throws MalformedURLException {
-//        platform = PlatformName;
-        platform = "desktop";
+    @Parameters({"PlatformName"})
+    public void startSession(String PlatformName) throws MalformedURLException {
+        platform = PlatformName;
         if (platform.equalsIgnoreCase("web"))
             init_browser(get_data("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile")) {
             init_mobile();
         }
-        else if(platform.equalsIgnoreCase("api"))
+        else if(platform.equalsIgnoreCase("api")) {
             init_API();
+        }
         else if (platform.equalsIgnoreCase("desktop")) {
             init_desktop();
+        }
+        else if(platform.equalsIgnoreCase("electron")) {
+            init_electron();
         }
         else
             throw new RuntimeException(("Invalid platform name stated"));
@@ -157,7 +176,7 @@ public class common_ops extends base {
 
     }
 
-        @AfterMethod
+    @AfterMethod
     public void afterMethod() {
         if (platform.equalsIgnoreCase("api"))
             verifications.number_value(http_request_status_code,  200, "Error in http requesting");
@@ -169,7 +188,9 @@ public class common_ops extends base {
         if (!platform.equalsIgnoreCase("api"))
         {
             if(!platform.equalsIgnoreCase("mobile")) {
-                windows_driver.quit();
+                if (!platform.equalsIgnoreCase("desktop"))
+                    driver.quit();
+                else windows_driver.quit();
             }
             else {
                 mobile_driver.quit();

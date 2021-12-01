@@ -53,7 +53,10 @@ public class personal_area_page {
     @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div:nth-child(1) > a > span > img")
     public WebElement btn_user_actions_navigate;
 
-    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div:nth-child(1) > ul > li:nth-child(4) > a")
+    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div.css-1cd0a4j.dropdown.dropup > a > span > img")
+    public WebElement btn_user_actions_navigate_after_change;
+
+    @FindBy(css = "#reactRoot > div > nav > div.css-3tq5ro > div.css-1cd0a4j.dropdown.dropup > ul > li:nth-child(4) > a")
     public WebElement btn_sign_out;
 
 }

@@ -4,7 +4,9 @@ import Utilities.common_ops;
 import Utilities.manage_pages;
 import io.appium.java_client.android.AndroidElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.sikuli.script.FindFailed;
 
@@ -13,7 +15,7 @@ public class UI_actions extends common_ops {
     @Step("Click on Element")
     public static void click(WebElement elem) {
         wait.until(ExpectedConditions.visibilityOf(elem));
-        elem.click();
+        click_without_waiting(elem);
     }
 
     @Step("Click on Element")
@@ -46,13 +48,33 @@ public class UI_actions extends common_ops {
     }
 
     @Step("Hover the mouse on a certain Element inorder to click secondary element")
-    public static void mouse_hover_elements(WebElement elem1, WebElement elem2) {
-        action.moveToElement(elem1).moveToElement(elem2).click().build().perform();
+        public static Actions move_to_element(WebElement elem) {
+        return action.moveToElement(elem);
     }
 
     @Step("Click on element by sikuli")
     public static void sikuli_click(String img_name) throws FindFailed {
         screen.click( get_data("ImageRepo") + img_name + ".png");
+    }
+
+    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    public static void key_down_action(String key) {
+        action.keyDown(Keys.CONTROL).sendKeys(key).keyUp(Keys.CONTROL).perform();
+    }
+
+    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    public static void enter_action(Actions actions, String value) {
+        actions.sendKeys(value, Keys.ENTER).build().perform();
+    }
+
+    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    public static void enter_action(WebElement elem, String value) {
+        elem.sendKeys(value, Keys.ENTER);
+    }
+
+    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    public static void double_click_action(Actions actions) {
+        actions.doubleClick();
     }
 
 

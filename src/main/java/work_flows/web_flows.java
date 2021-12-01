@@ -6,6 +6,7 @@ import Utilities.auxiliary_methods;
 import Utilities.common_ops;
 import Utilities.manage_pages;
 import io.qameta.allure.Step;
+import org.openqa.selenium.WebElement;
 import org.sikuli.script.FindFailed;
 
 import java.util.Arrays;
@@ -59,8 +60,8 @@ public class web_flows extends common_ops {
 
     @Step("Log out Grafana.")
     public static void log_out() {
-        UI_actions.click(_personal_area.btn_user_actions_navigate);
-        UI_actions.click(_personal_area.btn_sign_out);
+        UI_actions.click_without_waiting(_personal_area.btn_user_actions_navigate_after_change);
+        UI_actions.click_without_waiting(_personal_area.btn_sign_out);
     }
 
 }
