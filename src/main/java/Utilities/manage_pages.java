@@ -16,9 +16,9 @@ public class manage_pages extends base
     }
 
     //Initializing mobile driver.
-//    public static void init_app()
-//    {
-//        mainPageMobile = new mainPageMobile(mobileDriver);
-//    }
+    public static void init_app()
+    {
+        _main_page = new Page_objects.Mobile.Main_page(mobile_driver);
+    }
 }
 

@@ -2,6 +2,7 @@ package Extenstions;
 import Utilities.auxiliary_methods;
 import Utilities.common_ops;
 import Utilities.manage_pages;
+import io.appium.java_client.android.AndroidElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +16,12 @@ public class UI_actions extends common_ops {
         elem.click();
     }
 
+    @Step("Click on Element")
+    public static void click(AndroidElement elem) {
+        wait.until(ExpectedConditions.visibilityOf(elem));
+        elem.click();
+    }
+
     @Step("Get element attribute value")
     public static String get_attribute_value(WebElement elem, String attribute) {
         wait.until(ExpectedConditions.visibilityOf(elem));
@@ -23,6 +30,12 @@ public class UI_actions extends common_ops {
 
     @Step("Sending text to text-field")
     public static void update_text(WebElement elem, String value) {
+        wait.until(ExpectedConditions.visibilityOf(elem));
+        elem.sendKeys(value);
+    }
+
+    @Step("Sending text to text-field")
+    public static void update_text(AndroidElement elem, String value) {
         wait.until(ExpectedConditions.visibilityOf(elem));
         elem.sendKeys(value);
     }

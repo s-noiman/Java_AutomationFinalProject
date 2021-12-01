@@ -1,5 +1,7 @@
 package Utilities;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.restassured.path.json.JsonPath;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
@@ -33,8 +35,9 @@ public class base {
     public static ImageDiff diff;
     public static Screen screen = new Screen();
 
-
-//    public static DesiredCapabilities desired_capabilities = new DesiredCapabilities();
+    public static AppiumDriver mobile_driver;
+    public static TouchAction t;
+    public static DesiredCapabilities desired_capabilities = new DesiredCapabilities();
 
     public static Connection connection;
     public static Statement stmt;
@@ -53,7 +56,7 @@ public class base {
     protected static Page_objects.Web.personal_area_page _personal_area;
 
     //Mobile page objects
-
+    protected static Page_objects.Mobile.Main_page _main_page;
 
 
 

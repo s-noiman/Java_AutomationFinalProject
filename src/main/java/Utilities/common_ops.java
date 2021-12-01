@@ -2,6 +2,7 @@ package Utilities;
 
 import Extenstions.UI_actions;
 import Extenstions.verifications;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -104,32 +105,33 @@ public class common_ops extends base {
         http_request = RestAssured.given();
     }
 
-//    public static void init_Mobile() {
-//        desired_capabilities.setCapability(MobileCapabilityType.UDID, get_data("UDID"));
-//        desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, get_data("APP_PACKAGE"));
-//        desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, get_data("APP_ACTIVITY"));
-//        try
-//        {
-//            mobileDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desired_capabilities);
-//        }
-//        catch (Exception e)
-//        {
-//            System.out.println("Cannot connect to appium server, see details: " + e);
-//        }
-//        wait = new WebDriverWait(mobileDriver, Long.parseLong(get_data("Timeout")));
-//        manage_pages.init_app();
-//    }
+    public static void init_mobile() {
+        desired_capabilities.setCapability(MobileCapabilityType.UDID, get_data("UDID"));
+        desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, get_data("APP_PACKAGE"));
+        desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, get_data("APP_ACTIVITY"));
+        try
+        {
+            mobile_driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desired_capabilities);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Cannot connect to appium server, see details: " + e);
+        }
+        wait = new WebDriverWait(mobile_driver, Long.parseLong(get_data("Timeout")));
+        manage_pages.init_app();
+        t = new TouchAction(mobile_driver);
+    }
 
 
     @BeforeClass
 //    @Parameters({"PlatformName"})String PlatformName
     public void startSession() {
 //        platform = PlatformName;
-        platform = "api";
+        platform = "mobile";
         if (platform.equalsIgnoreCase("web"))
             init_browser(get_data("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile")) {
-//            init_Mobile();
+            init_mobile();
         }
         else if(platform.equalsIgnoreCase("api"))
             init_API();
@@ -143,9 +145,6 @@ public class common_ops extends base {
     public void afterMethod() {
         if (platform.equalsIgnoreCase("api"))
             verifications.number_value(http_request_status_code,  200, "Error in http requesting");
-        else if(platform.equalsIgnoreCase("mobile")) {
-//            work_flows.mobileFlows.backToHomePage();
-        }
     }
 
     @AfterClass
@@ -157,7 +156,7 @@ public class common_ops extends base {
                 driver.quit();
             }
             else {
-//                mobileDriver.quit();
+                mobile_driver.quit();
             }
         }
     }

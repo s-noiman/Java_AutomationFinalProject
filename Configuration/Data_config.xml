@@ -20,19 +20,9 @@
     <ImageRepo>C:/Java_AutomationFinalProject/Image_repository/</ImageRepo>
 
 
-
-
-
-
-
-
-
-
-
-
     <!-- Mobile -->
-    <UDID>orlzirqsofxc89so</UDID>
-    <APP_PACKAGE>com.avaza.AvazaCordova</APP_PACKAGE>
+    <UDID>R58M944ZE2A</UDID>
+    <APP_PACKAGE>com.shivgadhia.android.ukMortgageCalc</APP_PACKAGE>
     <APP_ACTIVITY>.MainActivity</APP_ACTIVITY>
 
     <!-- API -->
