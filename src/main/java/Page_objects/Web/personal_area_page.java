@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 
 public class personal_area_page {
 
-    @FindBy(how = How.XPATH, using = "//*[@id='reactRoot']/div/nav/div[2]/div[6]/a")
+    @FindBy(css = "#reactRoot > div > nav > div.css-1y6y4so > div.css-1cd0a4j.dropdown > a > span > div > svg")
     public WebElement configurationBtn;
 
 

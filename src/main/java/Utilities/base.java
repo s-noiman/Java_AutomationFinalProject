@@ -31,7 +31,7 @@ public class base {
     public static Screenshot image_screenShot;
     public static ImageDiffer img_diff = new ImageDiffer();
     public static ImageDiff diff;
-    public static Screen screen;
+    public static Screen screen = new Screen();
 
 
 //    public static DesiredCapabilities desired_capabilities = new DesiredCapabilities();

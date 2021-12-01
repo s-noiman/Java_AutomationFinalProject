@@ -3,7 +3,7 @@
 
     <!-- DB -->
 
-    <DBURL>jdbc:mysql://remotemysql.com:3306/sql6455258</DBURL>
+    <DBURL>jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6455258</DBURL>
     <DBUserName>sql6455258</DBUserName>
     <DBPassword>JGVasMpwHb</DBPassword>
 
@@ -17,7 +17,7 @@
     <!-- Web -->
     <BrowserName>Chrome</BrowserName>
     <url>http://localhost:3000/login</url>
-    <ImageRepo>./imageRepository/</ImageRepo>
+    <ImageRepo>./Image_repository/</ImageRepo>
 
 
 

@@ -51,7 +51,7 @@ public class verifications extends common_ops {
     @Step("Verify Element visually")
     public static void VisualElement(WebElement imageElement, String expectedImageName)
     {
-        auxiliary_methods.take_element_screenShot(_login.grafana_icon, "GrafanaIcon");
+        auxiliary_methods.take_element_screenShot(_login.grafana_icon, "Grafana_icon");
         BufferedImage expectedImage = null;
         try {
             expectedImage = ImageIO.read(new File(get_data("ImageRepo") + expectedImageName + ".png"));

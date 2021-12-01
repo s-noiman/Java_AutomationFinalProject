@@ -4,6 +4,7 @@ import Extenstions.DB_actions;
 import Extenstions.UI_actions;
 import Utilities.auxiliary_methods;
 import Utilities.common_ops;
+import Utilities.manage_pages;
 import io.qameta.allure.Step;
 import org.sikuli.script.FindFailed;
 
@@ -17,7 +18,7 @@ public class web_Flows extends common_ops {
         List<String> login_credentials = DB_actions.get_login_credentials(user_id);
         UI_actions.update_text(_login.inp_user_name, login_credentials.get(0));
         UI_actions.update_text(_login.inp_password, login_credentials.get(1));
-        UI_actions.sikuli_click("login_btn");
+        UI_actions.sikuli_click("Login_btn");
     }
 
     @Step("User personal area navigation.")
@@ -29,7 +30,10 @@ public class web_Flows extends common_ops {
     public static void search_plugin(String search_text) {
         UI_actions.click(_personal_area.configurationBtn);
         UI_actions.click(_personal_area.Plug);
+        auxiliary_methods.sleep(3);
+        UI_actions.click(_personal_area.SelectAll);
         UI_actions.update_text(_personal_area.SearchBox, search_text);
+        auxiliary_methods.sleep(5);
     }
 
     @Step("Receive user name and e-mail.")

@@ -34,7 +34,7 @@ public class common_ops extends base {
         Document doc = null;
         try
         {
-            fXmlFile = new File("./Configuration/DataConfig.xml");
+            fXmlFile = new File("./Configuration/Data_config.xml");
             dbFactory = DocumentBuilderFactory.newInstance();
             dBuilder = dbFactory.newDocumentBuilder();
             doc = dBuilder.parse(fXmlFile);
@@ -121,9 +121,10 @@ public class common_ops extends base {
 
 
     @BeforeClass
-    @Parameters({"PlatformName"})
-    public void startSession(String PlatformName) {
-        platform = PlatformName;
+//    @Parameters({"PlatformName"})String PlatformName
+    public void startSession() {
+//        platform = PlatformName;
+        platform = "web";
         if (platform.equalsIgnoreCase("web"))
             init_browser(get_data("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile")) {
