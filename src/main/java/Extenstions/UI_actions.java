@@ -3,6 +3,7 @@ import Utilities.common_ops;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.sikuli.script.FindFailed;
 
 public class UI_actions extends common_ops {
 
@@ -28,4 +29,11 @@ public class UI_actions extends common_ops {
     public static void mouse_hover_elements(WebElement elem1, WebElement elem2) {
         action.moveToElement(elem1).moveToElement(elem2).click().build().perform();
     }
+
+    @Step("Click on element by sikuli")
+    public static void sikuli_click(String img_name) throws FindFailed {
+        screen.click(get_data("ImageRepo") + img_name + ".png");
+    }
+
+
 }

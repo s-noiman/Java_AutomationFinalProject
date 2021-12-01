@@ -15,8 +15,8 @@ public class login_page {
     @FindBy(css = "form > button")
     public WebElement btn_login;
 
-    @FindBy(css = "div > h1")
-    public WebElement txt_title;
+    @FindBy(xpath = "//*[@id='reactRoot']/div/main/div[3]/div/div[1]/img")
+    public WebElement grafana_icon;
 
     @FindBy(xpath = "/html/body/div/div/main/div[2]/div/div/div/div[2]/div")
     public WebElement alert_message;

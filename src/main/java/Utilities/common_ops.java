@@ -1,5 +1,6 @@
 package Utilities;
 
+import Extenstions.UI_actions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -150,8 +151,11 @@ public class common_ops extends base {
         manage_DB.close_DB_connection();
         if (!platform.equalsIgnoreCase("api"))
         {
-            if(!platform.equalsIgnoreCase("mobile"))
+            if(!platform.equalsIgnoreCase("mobile")) {
+                UI_actions.click(_personal_area.darkThemeBtn);
+                UI_actions.click(_personal_area.saveChangesBtn);
                 driver.quit();
+            }
             else {
 //                mobileDriver.quit();
             }

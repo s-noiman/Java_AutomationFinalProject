@@ -2,9 +2,10 @@
 <Enviroment>
 
     <!-- DB -->
-    <DBURL>jdbc:mysql://remotemysql.com:3306/RtSQRMWl6c</DBURL>
-    <DBUserName>RtSQRMWl6c</DBUserName>
-    <DBPassword>1BFLkm0d0b</DBPassword>
+
+    <DBURL>jdbc:mysql://remotemysql.com:3306/sql6455258</DBURL>
+    <DBUserName>sql6455258</DBUserName>
+    <DBPassword>JGVasMpwHb</DBPassword>
 
     <!-- Timeout -->
     <Timeout>2</Timeout>
@@ -17,6 +18,17 @@
     <BrowserName>Chrome</BrowserName>
     <url>http://localhost:3000/login</url>
     <ImageRepo>./imageRepository/</ImageRepo>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Mobile -->
     <UDID>orlzirqsofxc89so</UDID>

@@ -8,7 +8,11 @@ import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.comparison.ImageDiff;
+import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -24,6 +28,11 @@ public class base {
     protected static String url, http_request_url, platform;
     protected static String authorization_basic_key = "Basic YWRtaW46YWRtaW4=";
     protected static SoftAssert soft_assert;
+    public static Screenshot image_screenShot;
+    public static ImageDiffer img_diff = new ImageDiffer();
+    public static ImageDiff diff;
+    public static Screen screen;
+
 
 //    public static DesiredCapabilities desired_capabilities = new DesiredCapabilities();
 

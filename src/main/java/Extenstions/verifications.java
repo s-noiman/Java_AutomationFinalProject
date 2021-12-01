@@ -1,11 +1,18 @@
 package Extenstions;
 
+import Utilities.auxiliary_methods;
 import Utilities.common_ops;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.asserts.SoftAssert;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.List;
 
 import static org.testng.Assert.*;
@@ -39,5 +46,22 @@ public class verifications extends common_ops {
         if(expected_result)
             assertTrue(elem.isDisplayed(), massage);
         else assertFalse(elem.isDisplayed(), massage);
+    }
+
+    @Step("Verify Element visually")
+    public static void VisualElement(WebElement imageElement, String expectedImageName)
+    {
+        auxiliary_methods.take_element_screenShot(_login.grafana_icon, "GrafanaIcon");
+        BufferedImage expectedImage = null;
+        try {
+            expectedImage = ImageIO.read(new File(get_data("ImageRepo") + expectedImageName + ".png"));
+        }
+        catch (Exception e) {
+            System.out.println("Error reading image file: " + e);
+        }
+        Screenshot imageScreenShot = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver, imageElement);
+        BufferedImage actualImage = imageScreenShot.getImage();
+        diff = img_diff.makeDiff(actualImage, expectedImage);
+        assertFalse(diff.hasDiff(), "Images are not the same");
     }
 }

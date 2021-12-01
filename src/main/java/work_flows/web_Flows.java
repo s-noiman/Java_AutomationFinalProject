@@ -5,6 +5,7 @@ import Extenstions.UI_actions;
 import Utilities.auxiliary_methods;
 import Utilities.common_ops;
 import io.qameta.allure.Step;
+import org.sikuli.script.FindFailed;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,11 +13,11 @@ import java.util.List;
 public class web_Flows extends common_ops {
 
     @Step("Login Grafana flow with credentials from DB.")
-    public static void log_in(int user_id) {
+    public static void log_in(int user_id) throws FindFailed {
         List<String> login_credentials = DB_actions.get_login_credentials(user_id);
         UI_actions.update_text(_login.inp_user_name, login_credentials.get(0));
         UI_actions.update_text(_login.inp_password, login_credentials.get(1));
-        UI_actions.click(_login.btn_login);
+        UI_actions.sikuli_click("login_btn");
     }
 
     @Step("User personal area navigation.")
