@@ -25,6 +25,13 @@
     <APP_PACKAGE>com.shivgadhia.android.ukMortgageCalc</APP_PACKAGE>
     <APP_ACTIVITY>.MainActivity</APP_ACTIVITY>
 
+    <!-- Desktop -->
+    <app>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</app>
+
+
+
+
+
     <!-- API -->
     <!-- Avaza API -->
     <Grafana_API_URL>http://localhost:3000/api/</Grafana_API_URL>

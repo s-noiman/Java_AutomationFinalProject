@@ -2,6 +2,7 @@ package Utilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.windows.WindowsDriver;
 import io.restassured.path.json.JsonPath;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +40,9 @@ public class base {
     public static TouchAction t;
     public static DesiredCapabilities desired_capabilities = new DesiredCapabilities();
 
+    protected static WindowsDriver windows_driver;
+
+
     public static Connection connection;
     public static Statement stmt;
     public static ResultSet rs;
@@ -58,6 +62,8 @@ public class base {
     //Mobile page objects
     protected static Page_objects.Mobile.Main_page _main_page;
 
+    //Desktom page objects
+    protected static Page_objects.Desktop.Calculator_page _calc_page;
 
 
 }

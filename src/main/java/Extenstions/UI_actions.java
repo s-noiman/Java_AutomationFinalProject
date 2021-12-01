@@ -17,6 +17,11 @@ public class UI_actions extends common_ops {
     }
 
     @Step("Click on Element")
+    public static void click_without_waiting(WebElement elem) {
+        elem.click();
+    }
+
+    @Step("Click on Element")
     public static void click(AndroidElement elem) {
         wait.until(ExpectedConditions.visibilityOf(elem));
         elem.click();

@@ -11,7 +11,8 @@ public class manage_pages extends base
         _password = PageFactory.initElements(driver, Page_objects.Web.password_page.class);
         _personal_area = PageFactory.initElements(driver, Page_objects.Web.personal_area_page.class);
 
-        //Mobile page objects initialization.
+        //Desktop page objects initialization.
+        _calc_page = PageFactory.initElements(windows_driver, Page_objects.Desktop.Calculator_page.class);
 
     }
 

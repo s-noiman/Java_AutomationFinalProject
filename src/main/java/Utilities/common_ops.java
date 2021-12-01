@@ -6,6 +6,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
@@ -14,16 +15,15 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 
-import org.testng.annotations.Parameters;
 import org.w3c.dom.Document;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -122,12 +122,18 @@ public class common_ops extends base {
         t = new TouchAction(mobile_driver);
     }
 
+    public static void init_desktop() throws MalformedURLException {
+        desired_capabilities = new DesiredCapabilities();
+        desired_capabilities.setCapability("app", get_data("app"));
+        windows_driver = new WindowsDriver(new URL("http://127.0.0.1:4723"), desired_capabilities);
+        windows_driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
 
     @BeforeClass
 //    @Parameters({"PlatformName"})String PlatformName
-    public void startSession() {
+    public void startSession() throws MalformedURLException {
 //        platform = PlatformName;
-        platform = "mobile";
+        platform = "desktop";
         if (platform.equalsIgnoreCase("web"))
             init_browser(get_data("BrowserName"));
         else if(platform.equalsIgnoreCase("mobile")) {
@@ -135,13 +141,23 @@ public class common_ops extends base {
         }
         else if(platform.equalsIgnoreCase("api"))
             init_API();
+        else if (platform.equalsIgnoreCase("desktop")) {
+            init_desktop();
+        }
         else
             throw new RuntimeException(("Invalid platform name stated"));
         manage_pages.init();
         manage_DB.init_DB_connection(get_data("DBURL"), get_data("DBUserName"), get_data("DBPassword"));
     }
 
-    @AfterMethod
+    @BeforeMethod
+    public void beforeMethod() {
+        if (platform.equalsIgnoreCase("desktop"))
+            UI_actions.click_without_waiting(_calc_page.getBtn_clear());
+
+    }
+
+        @AfterMethod
     public void afterMethod() {
         if (platform.equalsIgnoreCase("api"))
             verifications.number_value(http_request_status_code,  200, "Error in http requesting");
@@ -153,7 +169,7 @@ public class common_ops extends base {
         if (!platform.equalsIgnoreCase("api"))
         {
             if(!platform.equalsIgnoreCase("mobile")) {
-                driver.quit();
+                windows_driver.quit();
             }
             else {
                 mobile_driver.quit();
