@@ -18,7 +18,7 @@ public class DB_actions extends common_ops {
             rs.next();
             String[] indexes = (manage_DDT.get_data("LoginIndexes")).split(",");
             for(int index = 0; index < indexes.length; index++) {
-                credentials.add(rs.getString(indexes[index]));
+                credentials.add(rs.getString(Integer.getInteger(indexes[index])));
             }
         }
         catch (Exception e)
@@ -38,7 +38,7 @@ public class DB_actions extends common_ops {
             rs.next();
             String[] indexes = (manage_DDT.get_data("ContactIndexes")).split(",");
             for(int index = 0; index < indexes.length; index++) {
-                contactDetails.add(rs.getString(indexes[index]));
+                contactDetails.add(rs.getString(Integer.getInteger(indexes[index])));
             }
         }
         catch (Exception e)
