@@ -9,6 +9,8 @@
  </br>
  <h1> Ness-Elevation-BootCamp (Java Final Project)</h1>
  
+
+ 
  
  
 Hello,</br>
@@ -26,8 +28,16 @@ The ukMortgageCalc task tests on mobile environment the inputs 'amount', 'term',
 The Todolist task tests on electron environment by adding, renamming, deleting and checking-assignment tasks. ([Todolist.exe DownloadLink](https://atidcollege.co.il/downloads/electron/ToDoList-Setup.exe)).</br>
 The Calculator task tests different types of math operations such as multiplaction, adding, division, substraction on desktop environment. (built-in windows calculator).</br>
 The logging credentials are stored in Data Base, by "[freemysqlhosting **Website**](https://www.freemysqlhosting.net/)" which we get from the DB by SQL query.</br>
+</br>
+  <h1>UML Diagram :</h1>
 
-<h1>Powered By</h1>
+![alt text](https://github.com/Snoiman0047/Java_AutomationFinalProject/blob/main/Image_repository/Image%20from%20iOS.png)
+
+</br>
+
+
+
+<h1>Powered By :</h1>
 <div style="display: flex;">
 <img style="width: 300px; height:100px;" src="https://cdn.icon-icons.com/icons2/2699/PNG/128/grafana_logo_icon_171049.png">
 <img style="width: 100px; height: 100px;" src="https://img.icons8.com/officel/2x/selenium-test-automation.png"><br/>
