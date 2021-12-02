@@ -22,5 +22,4 @@ The logging credentials are stored in Data Base, by "freemysqlhosting.net" which
 <img style="width: 100px; height:100px;" src="https://static-00.iconduck.com/assets.00/appium-icon-255x256-9rw9ghl0.png">
 <img  style="width: 300px; height:100px;" src="https://cdn.icon-icons.com/icons2/2699/PNG/128/jenkins_logo_icon_167854.png">
 </div>
-![GitHub Light](https://github.com/github-light.png#gh-dark-mode-only)
-![GitHub Dark](https://github.com/github-dark.png#gh-light-mode-only)
+
