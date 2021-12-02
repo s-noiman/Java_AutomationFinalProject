@@ -31,7 +31,7 @@ public class common_ops extends base {
 
 
     @Step("Browser identification")
-    public static void init_browser(String browserType) {
+    private static void init_browser(String browserType) {
         switch (browserType.toLowerCase())
         {
             case "chrome":
@@ -58,42 +58,42 @@ public class common_ops extends base {
     }
 
     @Step("Chrome browser initialization")
-    public static WebDriver init_Chrome_driver() {
+    private static WebDriver init_Chrome_driver() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         return driver;
     }
 
     @Step("Firefox browser initialization")
-    public static WebDriver init_FF_driver() {
+    private static WebDriver init_FF_driver() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         return driver;
     }
 
     @Step("Internet explorer browser initialization")
-    public static WebDriver init_IE_driver() {
+    private static WebDriver init_IE_driver() {
         WebDriverManager.iedriver().setup();
         WebDriver driver = new InternetExplorerDriver();
         return driver;
     }
 
     @Step("Edge browser initialization")
-    public static WebDriver init_Edge_driver() {
+    private static WebDriver init_Edge_driver() {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
         return driver;
     }
 
     @Step("API initialization")
-    public static void init_API() {
+    private static void init_API() {
         RestAssured.baseURI = get_data("Grafana_API_URL");
         http_request = RestAssured.given();
         http_request_url = get_data("Grafana_API_URL");
     }
 
     @Step("Mobile initialization")
-    public static void init_mobile() {
+    private static void init_mobile() {
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities.setCapability(MobileCapabilityType.UDID, get_data("UDID"));
         desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, get_data("APP_PACKAGE"));
@@ -112,7 +112,7 @@ public class common_ops extends base {
     }
 
     @Step("Desktop initialization")
-    public static void init_desktop() throws MalformedURLException {
+    private static void init_desktop() throws MalformedURLException {
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities.setCapability("app", get_data("app"));
@@ -121,7 +121,7 @@ public class common_ops extends base {
     }
 
     @Step("Electron initialization")
-    public static void init_electron() {
+    private static void init_electron() {
         System.setProperty("webdriver.chrome.driver", get_data("ElectronDriverURL"));
         opt = new ChromeOptions();
         opt.setBinary(get_data("ElectURL"));
