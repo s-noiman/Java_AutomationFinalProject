@@ -1,6 +1,7 @@
 package Extenstions;
 
 import Utilities.common_ops;
+import Utilities.manage_DDT;
 import io.qameta.allure.Step;
 
 import java.util.ArrayList;
@@ -13,10 +14,12 @@ public class DB_actions extends common_ops {
         List<String> credentials = new ArrayList<>();
         try
         {
-            rs = stmt.executeQuery("SELECT user,password FROM test WHERE id='" + user_id + "'");
+            rs = stmt.executeQuery( manage_DDT.get_data("LoginCredentials") + "'" + user_id + "'");
             rs.next();
-            credentials.add(rs.getString(1));
-            credentials.add(rs.getString(2));
+            String[] indexes = (manage_DDT.get_data("LoginIndexes")).split(",");
+            for(int index = 0; index < indexes.length; index++) {
+                credentials.add(rs.getString(indexes[index]));
+            }
         }
         catch (Exception e)
         {
@@ -27,13 +30,16 @@ public class DB_actions extends common_ops {
 
     @Step("Getting user details from the DB.")
     public static List<String> get_user_contact_details(int user_id) {
+
         List<String> contactDetails = new ArrayList<>();
         try
         {
-            rs = stmt.executeQuery("SELECT user,email FROM test WHERE id='" + user_id + "'");
+            rs = stmt.executeQuery( manage_DDT.get_data("UserContactDetails") + "'" + user_id + "'");
             rs.next();
-            contactDetails.add(rs.getString(1));
-            contactDetails.add(rs.getString(3));
+            String[] indexes = (manage_DDT.get_data("ContactIndexes")).split(",");
+            for(int index = 0; index < indexes.length; index++) {
+                contactDetails.add(rs.getString(indexes[index]));
+            }
         }
         catch (Exception e)
         {

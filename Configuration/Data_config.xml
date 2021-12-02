@@ -6,6 +6,10 @@
     <DBUserName>sql6455258</DBUserName>
     <DBPassword>JGVasMpwHb</DBPassword>
     <ClassName>com.mysql.cj.jdbc.Driver</ClassName>
+    <LoginCredentials>SELECT user,password FROM test WHERE id=</LoginCredentials>
+    <LoginIndexes>1,2</LoginIndexes>
+    <UserContactDetails>SELECT user,email FROM test WHERE id=</UserContactDetails>
+    <ContactIndexes>1,3</ContactIndexes>
 
     <!-- Timeout -->
     <Timeout>2</Timeout>
