@@ -1,7 +1,7 @@
 ﻿# Java_AutomationFinalProject
 Hello,</br>
 This is our Automation Final Project.</br>
-we made this project to implement our automation skills that acquires in the "Full stack Automation tester" course.</br>
+we made this project to implement our automation skills that acquires in the "FullStack Automation Tester" course.</br>
 (By Yoni Flenner)</br>
 The project infrastructure was created from scratch.</br>
 This project was made on the "Grafana" platform. ("https://grafana.com/").</br>
