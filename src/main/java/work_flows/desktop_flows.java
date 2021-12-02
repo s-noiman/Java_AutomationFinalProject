@@ -1,6 +1,7 @@
 package work_flows;
 
 import Extenstions.UI_actions;
+import Extenstions.verifications;
 import Utilities.common_ops;
 import io.qameta.allure.Step;
 
@@ -81,6 +82,11 @@ public class desktop_flows extends common_ops {
             default:
                 break;
         }
+    }
+
+    @Step("Verify calc result")
+    public static void verify_calc_result(String excepted_result, String action) {
+        verifications.string_value(desktop_flows.get_calculator_result(), excepted_result, "The " + action + " operation did not work as expected.");
     }
 
 }

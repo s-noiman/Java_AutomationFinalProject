@@ -17,14 +17,13 @@ public class ukMortgageCalc_mobile extends common_ops {
         mobile_flows.Calculate("9", "9", "10");
         str_list = mobile_flows.get_calc_result();
         mobile_flows.Save();
-        Assert.assertTrue(_main_page.getAlert_saved().isDisplayed(), "SAVED");
+        mobile_flows.verify_save_action();
     }
 
     @Test(priority = 1, description = "Test02: Verifying values")
     @Description("Test description: Verifying The RepaymentValue + InterestValue.")
     public void verifyValues() {
-        verifications.string_values(str_list, mobile_flows.get_calc_result(),
-                "There is no match between the current actual user details and the expected details.");
+       mobile_flows.verify_calc_results();
     }
 
     @Test(priority = 2, description = "Test03: Delete and save")
@@ -32,6 +31,7 @@ public class ukMortgageCalc_mobile extends common_ops {
     public void Delete_ASSIGMENT() {
         UI_actions.swipe();
         mobile_flows.Delete_Assignment();
+        mobile_flows.verify_delete_assignment(false, "Calculator was not deleted.");
     }
 
 }

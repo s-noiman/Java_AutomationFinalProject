@@ -60,16 +60,31 @@ public class electron_flows extends common_ops {
     }
 
     @Step("Change task")
-    public static void change(int indexToChange, String changeValue) {
+    public static void change(int indexToChange) {
         UI_actions.double_click_action(UI_actions.move_to_element(_todo.get_todo_to_doubleClick(driver, indexToChange)));
         UI_actions.move_to_element(_todo.get_todo_to_move(driver, indexToChange));
         UI_actions.key_down_action("a");
-        UI_actions.enter_action(UI_actions.move_to_element(_todo.get_move_todo(driver, indexToChange)), changeValue);
+        UI_actions.enter_action(UI_actions.move_to_element(_todo.get_move_todo(driver, indexToChange)), str);
     }
 
     @Step("Mark a completed task")
-    public static void complete(String todoDescription) {
-        UI_actions.click_without_waiting(_todo.get_todo_to_complete(driver, getTodoIndex(todoDescription)));
+    public static void complete() {
+        UI_actions.click_without_waiting(_todo.get_todo_to_complete(driver, getTodoIndex(str)));
+    }
+
+    @Step("Verify amount of tasks")
+    public static void verify_tasks_amount() {
+        verifications.number_value(electron_flows.countTodos(), integer, "Unexpected tasks amount");
+    }
+
+    @Step("Verify task was changed")
+    public static void verify_tasks_changed(boolean expected_result, String massage) {
+        verifications.verify_condition(expected_result,electron_flows.getTodoIndex(str) > 0, massage);
+    }
+
+    @Step("Verify task was changed")
+    public static void verify_task_completed(boolean expected_result, String massage) {
+        verifications.is_elem_exists_without_wait(_todo.get_completed_todo(driver, electron_flows.getTodoIndex(str)), expected_result, massage);
     }
 
 

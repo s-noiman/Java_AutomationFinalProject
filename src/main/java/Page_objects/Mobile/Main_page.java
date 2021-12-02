@@ -3,10 +3,9 @@ package Page_objects.Mobile;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.concurrent.TimeUnit;
 
 public class Main_page {
 
@@ -17,48 +16,54 @@ public class Main_page {
     @FindBy(xpath = "//*[@id='etRate']")
     private AndroidElement _Rate;
 
+    @Step("Get amount element")
     public AndroidElement get_Amount() {
         return _Amount;
     }
 
+    @Step("Get term element")
     public AndroidElement get_Term() {
         return _Term;
     }
 
+    @Step("Get rate element")
     public AndroidElement get_Rate() {
         return _Rate;
     }
 
+    @Step("Get calculator element")
     public AndroidElement getCalculate_btn() {
         return Calculate_btn;
     }
 
+    @Step("Get save element")
     public AndroidElement getSave_btn() {
         return Save_btn;
     }
 
+    @Step("Get alert element")
     public AndroidElement getAlert_saved() {
         return Alert_saved;
     }
 
+    @Step("Get repayment element")
     public AndroidElement getRepaymentVal() {
         return RepaymentVal;
     }
 
+    @Step("Get interest element")
     public AndroidElement getInterestVal() {
         return InterestVal;
     }
 
+    @Step("Get delete element")
     public AndroidElement getDelete_btn() {
         return Delete_btn;
     }
 
+    @Step("Get popup element")
     public AndroidElement getPOPUP() {
         return POPUP;
-    }
-
-    public AppiumDriver getMobileDriver() {
-        return mobileDriver;
     }
 
     @FindBy(xpath = "//*[@text='Calculate']")
@@ -76,11 +81,8 @@ public class Main_page {
     @FindBy(xpath = "//*[@id='button1']")
     private AndroidElement POPUP;
 
-    private AppiumDriver mobileDriver;
-
     public Main_page(AppiumDriver mobileDriver)
     {
-        this.mobileDriver = mobileDriver;
         PageFactory.initElements(new AppiumFieldDecorator(mobileDriver), this);
     }
 
