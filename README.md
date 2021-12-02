@@ -13,7 +13,7 @@ Basically, we made 3 projects: ukMortgageCalc, Todolist, Calculator. In each run
 The ukMortgageCalc task tests on mobile environment the inputs 'amount', 'term', 'rate' and calculate the built-in function, after that we saved the results and after checking we delete the saved assigment. ([ukMortgageCalc APK DownloadLINK](https://grafana.com/)).
 The Todolist task tests on electron environment by adding, renamming, deleting and checking-assigment tasks. ([Todolist.exe DownloadLink](https://atidcollege.co.il/downloads/electron/ToDoList-Setup.exe)).</br>
 The Calculator task tests different types of math operations such as multiplaction, adding, division, substraction on desktop environment. (built-in windows calculator).</br>
-The logging credentials are stored in Data Base, by "freemysqlhosting.net" which we get from the DB by SQL query.</br>
+The logging credentials are stored in Data Base, by "[freemysqlhosting **Website**](https://www.freemysqlhosting.net/)" which we get from the DB by SQL query.</br>
 
 <h1>Powered By</h1>
 <div style="display: flex;">
