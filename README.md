@@ -1,8 +1,13 @@
 
  
  </br> 
+ <div style="display: flex;">
+ <img  style="width: 100px; height:100px;" src="https://media-exp1.licdn.com/dms/image/C4D0BAQHHoy2390q_hA/company-logo_200_200/0/1634044285325?e=1646265600&v=beta&t=f7VKWSC1Yf27z42qw0GG1WVZOp8dyP5Ss4GocxCH-rw">
+<img  style="width: 100px; height:100px;" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGmkN91YLXdzA/company-logo_200_200/0/1595238232969?e=1646265600&v=beta&t=vTRjKo_ixni1msBrQd9RCKHbKzfTJov8bLzCqbY0VAA">
+ </div>
+
  </br>
- <h1> Java_AutomationFinalProject </h1>
+ <h1> Ness-Elevation-BootCamp (Java Final Project)</h1>
  
  
  
