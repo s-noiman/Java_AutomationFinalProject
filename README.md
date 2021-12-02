@@ -24,8 +24,8 @@ In this project we were tested this platform in 2 ways: Web & API</br>
 The web app receives username and password from sql server to login, performs additional tasks such as changing backgrounds, search extensions in search engine and logout</br>
 Each platform has it's own tests flows, and test cases.</br>
 Basically, we made 3 more projects: ukMortgageCalc, Todolist, Calculator. In each run, the automation creating 1 new ukMortgageCalc task, 1 Todolist task and 1 Calculator task.</br>
-The ukMortgageCalc task tests on mobile environment the inputs 'amount', 'term', 'rate' and calculate the built-in function, after that we saved the results and after checking we delete the saved assignment. ([ukMortgageCalc APK DownloadLink](https://grafana.com/)).
-The Todolist task tests on electron environment by adding, renamming, deleting and checking-assignment tasks. ([Todolist.exe DownloadLink](https://atidcollege.co.il/downloads/electron/ToDoList-Setup.exe)).</br>
+The ukMortgageCalc task tests on mobile environment the inputs 'amount', 'term', 'rate' and calculate the built-in function, after that we saved the results and after checking we delete the saved assignment. ([ukMortgageCalc APK - DownloadLink](https://grafana.com/)).
+The Todolist task tests on electron environment by adding, renamming, deleting and checking-assignment tasks. ([Todolist.exe - DownloadLink](https://atidcollege.co.il/downloads/electron/ToDoList-Setup.exe)).</br>
 The Calculator task tests different types of math operations such as multiplaction, adding, division, substraction on desktop environment. (built-in windows calculator).</br>
 The logging credentials are stored in Data Base, by "[freemysqlhosting **Website**](https://www.freemysqlhosting.net/)" which we get from the DB by SQL query.</br>
 </br>
