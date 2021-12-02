@@ -2,19 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Mobile Tests(failed)">
-    <parameter name="PlatformName" value="mobile"/>
+    <parameter name="PlatformName" value="desktop"/>
     <classes>
-      <class name="Sanity_tests.ukMortgageCalc_mobile">
+      <class name="Sanity_tests.Calculator_desktop">
         <methods>
           <include name="closeSession"/>
           <include name="startSession"/>
           <include name="afterMethod"/>
-          <include name="verifyValues"/>
+          <include name="Combination"/>
+          <include name="Division"/>
+          <include name="Subtraction"/>
+          <include name="Addition"/>
+          <include name="Multiplication"/>
           <include name="beforeMethod"/>
-          <include name="Calculate_Values"/>
-          <include name="Delete_ASSIGMENT"/>
         </methods>
-      </class> <!-- Sanity_tests.ukMortgageCalc_mobile -->
+      </class> <!-- Sanity_tests.Calculator_desktop -->
     </classes>
   </test> <!-- Mobile Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

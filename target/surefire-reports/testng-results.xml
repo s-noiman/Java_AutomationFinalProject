@@ -1,64 +1,802 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38818" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:51 IST">
+  <suite name="Suite" duration-ms="1623" started-at="2021-12-02T11:03:40 IST" finished-at="2021-12-02T11:03:41 IST">
     <groups>
     </groups>
-    <test name="Mobile Tests" duration-ms="38818" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:51 IST">
-      <class name="Sanity_tests.ukMortgageCalc_mobile">
-        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="startSession" is-config="true" duration-ms="21881" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:34 IST">
+    <test name="Mobile Tests" duration-ms="1623" started-at="2021-12-02T11:03:40 IST" finished-at="2021-12-02T11:03:41 IST">
+      <class name="Sanity_tests.Calculator_desktop">
+        <test-method status="FAIL" signature="startSession(java.lang.String)[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="startSession" is-config="true" duration-ms="1405" started-at="2021-12-02T11:03:40 IST" finished-at="2021-12-02T11:03:41 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mobile]]>
+                <![CDATA[desktop]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:34 IST" finished-at="2021-12-02T03:07:34 IST">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="-1638435821802" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Calculate_Values()[pri:1, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="Calculate_Values" duration-ms="7717" started-at="2021-12-02T03:07:34 IST" finished-at="2021-12-02T03:07:42 IST">
+        <test-method status="SKIP" signature="Addition()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="Addition" duration-ms="0" started-at="2021-12-02T11:03:41 IST" description="Test01: Mathematical exercise of addition action." finished-at="2021-12-02T11:03:41 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Calculate_Values -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+        </test-method> <!-- Addition -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="afterMethod" is-config="true" duration-ms="-1638435821808" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="-1638435821811" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyValues()[pri:2, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="verifyValues" duration-ms="832" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+        <test-method status="SKIP" signature="Combination()[pri:1, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="Combination" duration-ms="0" started-at="2021-12-02T11:03:41 IST" description="Test02: Mathematical exercise of combination action." finished-at="2021-12-02T11:03:41 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyValues -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+        </test-method> <!-- Combination -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="afterMethod" is-config="true" duration-ms="-1638435821811" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="Delete_ASSIGMENT()[pri:3, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="Delete_ASSIGMENT" duration-ms="4155" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:47 IST">
+        <test-method status="SKIP" signature="Division()[pri:2, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="Division" duration-ms="0" started-at="2021-12-02T11:03:41 IST" description="Test03: Mathematical exercise of division action." finished-at="2021-12-02T11:03:41 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Delete_ASSIGMENT -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+        </test-method> <!-- Division -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="-1638435821813" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:47 IST" finished-at="2021-12-02T03:07:47 IST">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="afterMethod" is-config="true" duration-ms="-1638435821814" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="closeSession" is-config="true" duration-ms="4178" started-at="2021-12-02T03:07:47 IST" finished-at="2021-12-02T03:07:51 IST">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="-1638435821816" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="Multiplication()[pri:3, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="Multiplication" duration-ms="0" started-at="2021-12-02T11:03:41 IST" description="Test04: Mathematical exercise of multiplication action." finished-at="2021-12-02T11:03:41 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Multiplication -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="afterMethod" is-config="true" duration-ms="-1638435821818" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="Subtraction()[pri:4, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="Subtraction" duration-ms="0" started-at="2021-12-02T11:03:41 IST" description="Test05: Mathematical exercise of subtraction action." finished-at="2021-12-02T11:03:41 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:96)
+at io.appium.java_client.windows.WindowsDriver.<init>(WindowsDriver.java:42)
+at Utilities.common_ops.init_desktop(common_ops.java:134)
+at Utilities.common_ops.startSession(common_ops.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Subtraction -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="-1638435821819" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="afterMethod" is-config="true" duration-ms="-1638435821820" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="closeSession()[pri:0, instance:Sanity_tests.Calculator_desktop@6ec8211c]" name="closeSession" is-config="true" duration-ms="-1638435821820" started-at="2021-12-02T11:03:41 IST" finished-at="1970-01-01T02:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- Sanity_tests.ukMortgageCalc_mobile -->
+      </class> <!-- Sanity_tests.Calculator_desktop -->
     </test> <!-- Mobile Tests -->
   </suite> <!-- Suite -->
 </testng-results>

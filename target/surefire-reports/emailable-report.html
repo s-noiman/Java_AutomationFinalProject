@@ -9,12 +9,398 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Mobile Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">38,818</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Mobile Tests</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">1,623</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Sanity_tests.ukMortgageCalc_mobile</td><td><a href="#m0">Calculate_Values</a></td><td rowspan="1">1638407254379</td><td rowspan="1">7717</td></tr><tr class="passedeven"><td><a href="#m1">Delete_ASSIGMENT</a></td><td rowspan="1">1638407262935</td><td rowspan="1">4155</td></tr><tr class="passedeven"><td><a href="#m2">verifyValues</a></td><td rowspan="1">1638407262102</td><td rowspan="1">832</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Mobile Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Sanity_tests.Calculator_desktop</td><td><a href="#m0">startSession</a></td><td rowspan="1">1638435820251</td><td rowspan="1">1405</td></tr><tr><th colspan="4">Mobile Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="11">Sanity_tests.Calculator_desktop</td><td><a href="#m1">afterMethod</a></td><td rowspan="5">1638435821811</td><td rowspan="5">-1638435821811</td></tr><tr class="skippedeven"><td><a href="#m2">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m4">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m5">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m6">beforeMethod</a></td><td rowspan="5">1638435821802</td><td rowspan="5">-1638435821802</td></tr><tr class="skippedeven"><td><a href="#m7">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m8">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m9">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m10">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m11">closeSession</a></td><td rowspan="1">1638435821820</td><td rowspan="1">-1638435821820</td></tr><tr><th colspan="4">Mobile Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">Sanity_tests.Calculator_desktop</td><td><a href="#m12">Addition</a></td><td rowspan="1">1638435821805</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">Combination</a></td><td rowspan="1">1638435821811</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m14">Division</a></td><td rowspan="1">1638435821813</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m15">Multiplication</a></td><td rowspan="1">1638435821817</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m16">Subtraction</a></td><td rowspan="1">1638435821819</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Mobile Tests</h2><h3 id="m0">Sanity_tests.ukMortgageCalc_mobile#Calculate_Values</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Sanity_tests.ukMortgageCalc_mobile#Delete_ASSIGMENT</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Sanity_tests.ukMortgageCalc_mobile#verifyValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Mobile Tests</h2><h3 id="m0">Sanity_tests.Calculator_desktop#startSession</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>desktop</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Sanity_tests.Calculator_desktop#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Sanity_tests.Calculator_desktop#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Sanity_tests.Calculator_desktop#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Sanity_tests.Calculator_desktop#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Sanity_tests.Calculator_desktop#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Sanity_tests.Calculator_desktop#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Sanity_tests.Calculator_desktop#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Sanity_tests.Calculator_desktop#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Sanity_tests.Calculator_desktop#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Sanity_tests.Calculator_desktop#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Sanity_tests.Calculator_desktop#closeSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Sanity_tests.Calculator_desktop#Addition</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Sanity_tests.Calculator_desktop#Combination</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Sanity_tests.Calculator_desktop#Division</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Sanity_tests.Calculator_desktop#Multiplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Sanity_tests.Calculator_desktop#Subtraction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

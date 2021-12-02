@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\snoim\OneDrive\Desktop\Automation\Java_AutomationFinalProject\execute_mobile.xml</span>
+                    <span>C:\Users\snoim\OneDrive\Desktop\Automation\Java_AutomationFinalProject\execute_desktop.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,  5 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.ukMortgageCalc_mobile" hash-for-method="Calculate_Values">Calculate_Values</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.Calculator_desktop" hash-for-method="Addition">Addition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.ukMortgageCalc_mobile" hash-for-method="Delete_ASSIGMENT">Delete_ASSIGMENT</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.Calculator_desktop" hash-for-method="Combination">Combination</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.ukMortgageCalc_mobile" hash-for-method="verifyValues">verifyValues</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.Calculator_desktop" hash-for-method="Division">Division</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.Calculator_desktop" hash-for-method="Multiplication">Multiplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_tests.Calculator_desktop" hash-for-method="Subtraction">Subtraction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,39 +139,383 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Sanity_tests.ukMortgageCalc_mobile</span>
+              <img src="skipped.png"/>
+              <span class="class-name">Sanity_tests.Calculator_desktop</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Calculate_Values">
-                  </a> <!-- Calculate_Values -->
-                  <span class="method-name">Calculate_Values</span>
+                  <a name="Addition">
+                  </a> <!-- Addition -->
+                  <span class="method-name">Addition</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test01: Mathematical exercise of addition action.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Delete_ASSIGMENT">
-                  </a> <!-- Delete_ASSIGMENT -->
-                  <span class="method-name">Delete_ASSIGMENT</span>
+                  <a name="Combination">
+                  </a> <!-- Combination -->
+                  <span class="method-name">Combination</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test02: Mathematical exercise of combination action.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValues">
-                  </a> <!-- verifyValues -->
-                  <span class="method-name">verifyValues</span>
+                  <a name="Division">
+                  </a> <!-- Division -->
+                  <span class="method-name">Division</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test03: Mathematical exercise of division action.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Multiplication">
+                  </a> <!-- Multiplication -->
+                  <span class="method-name">Multiplication</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test04: Mathematical exercise of multiplication action.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Subtraction">
+                  </a> <!-- Subtraction -->
+                  <span class="method-name">Subtraction</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.windows.WindowsDriver.execute(WindowsDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:86)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:96)
+	at io.appium.java_client.windows.WindowsDriver.&lt;init&gt;(WindowsDriver.java:42)
+	at Utilities.common_ops.init_desktop(common_ops.java:134)
+	at Utilities.common_ops.startSession(common_ops.java:166)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 45 more
+Caused by: org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;html&gt;
+&lt;head&gt;
+   &lt;title&gt;Status page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;font-family: sans-serif;&quot;&gt;
+&lt;p style=&quot;font-size: 1.2em;font-weight: bold;margin: 1em 0px;&quot;&gt;Not Found&lt;/p&gt;
+&lt;p&gt;The server has not found anything matching the request URI&lt;/p&gt;
+&lt;p&gt;You can get technical details &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5&quot;&gt;here&lt;/a&gt;.&lt;br&gt;
+Please continue your visit at our &lt;a href=&quot;/&quot;&gt;home page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	... 50 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IQLCMPV6&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: WindowsDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 50 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test05: Mathematical exercise of subtraction action.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\snoim\OneDrive\Desktop\Automation\Java_AutomationFinalProject\execute_mobile.xml</span>
+            <span class="header-content">C:\Users\snoim\OneDrive\Desktop\Automation\Java_AutomationFinalProject\execute_desktop.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,9 +523,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Mobile Tests&quot;&gt;
-    &lt;parameter name=&quot;PlatformName&quot; value=&quot;mobile&quot;/&gt;
+    &lt;parameter name=&quot;PlatformName&quot; value=&quot;desktop&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Sanity_tests.ukMortgageCalc_mobile&quot;/&gt;
+      &lt;class name=&quot;Sanity_tests.Calculator_desktop&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Mobile Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -211,24 +565,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Calculate_Values')
-data.setCell(0, 2, 'Sanity_tests.ukMortgageCalc_mobile')
-data.setCell(0, 3, 7717);
+data.setCell(0, 1, 'Division')
+data.setCell(0, 2, 'Sanity_tests.Calculator_desktop')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Delete_ASSIGMENT')
-data.setCell(1, 2, 'Sanity_tests.ukMortgageCalc_mobile')
-data.setCell(1, 3, 4155);
+data.setCell(1, 1, 'Multiplication')
+data.setCell(1, 2, 'Sanity_tests.Calculator_desktop')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyValues')
-data.setCell(2, 2, 'Sanity_tests.ukMortgageCalc_mobile')
-data.setCell(2, 3, 832);
+data.setCell(2, 1, 'Addition')
+data.setCell(2, 2, 'Sanity_tests.Calculator_desktop')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Combination')
+data.setCell(3, 2, 'Sanity_tests.Calculator_desktop')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Subtraction')
+data.setCell(4, 2, 'Sanity_tests.Calculator_desktop')
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -254,50 +616,76 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Sanity_tests.ukMortgageCalc_mobile</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Sanity_tests.Calculator_desktop</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startSession(mobile)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">startSession(desktop)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">21898 ms</span>
+                <span class="method-start">1551 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Calculate_Values</span>
-                <span class="method-start">21899 ms</span>
+                <span class="method-name">Addition</span>
+                <span class="method-start">1554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">29619 ms</span>
+                <span class="method-start">1557 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">29621 ms</span>
+                <span class="method-start">1560 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyValues</span>
-                <span class="method-start">29622 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">30454 ms</span>
+                <span class="method-start">1560 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">Delete_ASSIGMENT</span>
-                <span class="method-start">30455 ms</span>
+                <span class="method-name">Combination</span>
+                <span class="method-start">1560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Division</span>
+                <span class="method-start">1562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">30455 ms</span>
+                <span class="method-start">1562 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">34610 ms</span>
+                <span class="method-start">1563 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Multiplication</span>
+                <span class="method-start">1566 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Subtraction</span>
+                <span class="method-start">1568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1569 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">34611 ms</span>
+                <span class="method-start">1569 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

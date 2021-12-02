@@ -1,4 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.948 s - in TestSuite
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 16, Time elapsed: 3.102 s <<< FAILURE! - in TestSuite
+startSession(Sanity_tests.Calculator_desktop)  Time elapsed: 2.714 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: 
+Unable to parse remote response: <html>
+<head>
+   <title>Status page</title>
+</head>
+<body style="font-family: sans-serif;">
+<p style="font-size: 1.2em;font-weight: bold;margin: 1em 0px;">Not Found</p>
+<p>The server has not found anything matching the request URI</p>
+<p>You can get technical details <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5">here</a>.<br>
+Please continue your visit at our <a href="/">home page</a>.
+</p>
+</body>
+</html>
+
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-IQLCMPV6', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: WindowsDriver
+
