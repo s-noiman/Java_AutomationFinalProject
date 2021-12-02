@@ -13,6 +13,7 @@ import static org.monte.media.FormatKeys.*;
 import static org.monte.media.FormatKeys.FrameRateKey;
 import static org.monte.media.VideoFormatKeys.*;
 import static org.monte.media.VideoFormatKeys.QualityKey;
+import static Utilities.manage_DDT.get_data;
 
 public class Monte_screen_recorder extends ScreenRecorder {
 
@@ -39,7 +40,7 @@ public class Monte_screen_recorder extends ScreenRecorder {
     }
 
     public static void start_record(String methodName) throws Exception {
-        File file = new File(common_ops.get_data("RecordRepo"));
+        File file = new File(get_data("RecordRepo"));
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
         int height = screenSize.height;

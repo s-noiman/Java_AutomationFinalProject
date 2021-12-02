@@ -22,38 +22,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 
-import org.w3c.dom.Document;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
+import static Utilities.manage_DDT.get_data;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class common_ops extends base {
 
-    @Step("Get node data from Data_config.xml file")
-    public static String get_data(String nodeName) {
-        File fXmlFile;
-        DocumentBuilderFactory dbFactory;
-        DocumentBuilder dBuilder;
-        Document doc = null;
-        try
-        {
-            fXmlFile = new File("./Configuration/Data_config.xml");
-            dbFactory = DocumentBuilderFactory.newInstance();
-            dBuilder = dbFactory.newDocumentBuilder();
-            doc = dBuilder.parse(fXmlFile);
-        }
-        catch (Exception e)
-        {
-            System.out.println("Error Reading XML file: " + e);
-        }
-        finally
-        {
-            return doc.getElementsByTagName(nodeName).item(0).getTextContent();
-        }
-    }
 
     @Step("Browser identification")
     public static void init_browser(String browserType) {
@@ -75,7 +50,7 @@ public class common_ops extends base {
                 throw new RuntimeException(("Invalid platform name stated."));
         }
         driver.manage().window().maximize();
-        driver.get(get_data("url"));
+        driver.get(manage_DDT.get_data("url"));
         driver.manage().timeouts().implicitlyWait(Long.parseLong(get_data("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(get_data("Timeout")));
         action = new Actions(driver);
@@ -195,7 +170,7 @@ public class common_ops extends base {
     @AfterMethod
     public void afterMethod() {
         if (platform.equalsIgnoreCase("api"))
-            verifications.number_value(integer,  200, "Error in http requesting");
+            verifications.number_value(integer, Integer.parseInt(get_data("StatusCode")), "Error in http requesting");
     }
 
     @AfterClass

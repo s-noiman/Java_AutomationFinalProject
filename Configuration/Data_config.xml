@@ -32,5 +32,6 @@
     <!-- Grafana API -->
     <Grafana_API_URL>http://localhost:3000/api/</Grafana_API_URL>
     <Authorization_basic_key>Basic YWRtaW46YWRtaW4=</Authorization_basic_key>
+    <StatusCode>200</StatusCode>
 
 </Enviroment>

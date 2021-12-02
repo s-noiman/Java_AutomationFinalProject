@@ -3,6 +3,7 @@ package Extenstions;
 import Utilities.common_ops;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
+import static Utilities.manage_DDT.get_data;
 
 public class API_actions extends common_ops {
 

@@ -8,9 +8,7 @@ import org.sikuli.script.FindFailed;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import work_flows.web_flows;
-import Extenstions.verifications;
 
-@Listeners(Utilities.listeners.class)
 public class Grafana_web extends common_ops {
 
     @Test(priority = 0, description = "Test01: Login Grafana website with credentials.")

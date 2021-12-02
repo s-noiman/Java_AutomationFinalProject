@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import static Utilities.manage_DDT.get_data;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,7 +41,7 @@ public class listeners implements ITestListener
         catch (Exception e) {
             e.printStackTrace();
         }
-        File file = new File( common_ops.get_data("RecordRepo") + test.getName() + ".avi");
+        File file = new File( get_data("RecordRepo") + test.getName() + ".avi");
         if(file.delete()) {
             System.out.println("Recorded Screen Cast File Deleted Successfully");
         }

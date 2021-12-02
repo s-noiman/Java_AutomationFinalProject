@@ -4,13 +4,6 @@ import Extenstions.UI_actions;
 import Extenstions.verifications;
 import Utilities.common_ops;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 public class electron_flows extends common_ops {
 

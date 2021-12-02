@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.sikuli.script.FindFailed;
+import static Utilities.manage_DDT.get_data;
 
 import java.time.Duration;
 
@@ -81,8 +82,8 @@ public class UI_actions extends common_ops {
     }
 
     @Step("Swipe screen")
-    public static void swipe() {
-        touch_action.press(PointOption.point(900, 300)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000))).
-                moveTo(PointOption.point(0, 400)).release().perform();
+    public static void swipe(PointOption point1, PointOption point2, int millis_duration) {
+        touch_action.press(point1).waitAction(WaitOptions.waitOptions(Duration.ofMillis(millis_duration))).
+                moveTo(point2).release().perform();
     }
 }

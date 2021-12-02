@@ -8,6 +8,7 @@ import Utilities.common_ops;
 import io.qameta.allure.Step;
 import org.openqa.selenium.support.Color;
 import org.sikuli.script.FindFailed;
+import static Utilities.manage_DDT.get_data;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,5 @@
 package Sanity_tests;
 
-import Extenstions.verifications;
 import Utilities.common_ops;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
+    <listeners>
+        <listener class-name="Utilities.listeners"></listener>
+    </listeners>
     <test name="Web Tests">
         <parameter name="PlatformName" value="web" />
         <classes>
