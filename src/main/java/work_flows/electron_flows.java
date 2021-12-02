@@ -14,12 +14,12 @@ import static org.testng.Assert.assertTrue;
 
 public class electron_flows extends common_ops {
 
-    @Step
+    @Step("Get several existing tasks")
     public static int countTodos() {
        return (_todo.getTodos_list()).size();
     }
 
-    @Step
+    @Step("Get index of task")
     public static int getTodoIndex(String todoDescription) {
         int index = 1;
         while(index <= countTodos()) {
@@ -30,46 +30,36 @@ public class electron_flows extends common_ops {
         return 0;
     }
 
-    @Step
+    @Step("Comparing a task to a string obtained as a parameter")
     private static boolean compare(String elem, String todoDesc) {
         return elem.compareTo(todoDesc) == 0;
     }
 
-    @Step
+    @Step("Create tasks")
     public static void createAll(String... todoDescription) {
         for(String todo: todoDescription)
             createIt(todo);
     }
 
-    @Step
+    @Step("Create task")
     private static void createIt(String todoDescription) {
         UI_actions.enter_action(_todo.getInp_todos(), todoDescription);
-        todos++;
+        integer++;
     }
 
-    @Step
+    @Step("Delete tasks")
     public static void deleteAll(String... todoDescription) {
         for(String todo: todoDescription) {
             deleteIt(getTodoIndex(todo)); }
     }
 
-    @Step
+    @Step("Delete task")
     private static void deleteIt(int todoIndex) {
         action.moveToElement(_todo.get_delete_btn(driver,todoIndex)).click().build().perform();
-        todos--;
+        integer--;
     }
 
-    @Step
-    public static void verifyTodos() {
-        assertEquals(countTodos(), todos, "Expected amount");
-    }
-
-    @Step
-    public static void verifyTodos(String todoDescription) {
-        assertTrue(getTodoIndex(todoDescription) > 0);
-    }
-
-    @Step
+    @Step("Change task")
     public static void change(int indexToChange, String changeValue) {
         UI_actions.double_click_action(UI_actions.move_to_element(_todo.get_todo_to_doubleClick(driver, indexToChange)));
         UI_actions.move_to_element(_todo.get_todo_to_move(driver, indexToChange));
@@ -77,14 +67,10 @@ public class electron_flows extends common_ops {
         UI_actions.enter_action(UI_actions.move_to_element(_todo.get_move_todo(driver, indexToChange)), changeValue);
     }
 
-    @Step
+    @Step("Mark a completed task")
     public static void complete(String todoDescription) {
         UI_actions.click_without_waiting(_todo.get_todo_to_complete(driver, getTodoIndex(todoDescription)));
     }
 
-    @Step
-    public static void verifyCompleted(String todoDescription) {
-        verifications.is_elem_exists_without_wait(_todo.get_completed_todo(driver, getTodoIndex(todoDescription)), true, "completed");
-    }
 
 }

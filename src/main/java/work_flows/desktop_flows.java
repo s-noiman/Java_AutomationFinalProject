@@ -6,12 +6,12 @@ import io.qameta.allure.Step;
 
 public class desktop_flows extends common_ops {
 
-    @Step
+    @Step("Get calculator result")
     public static String get_calculator_result() {
         return _calc_page.getTxt_calculator_result().getText().replace("Display is", "").trim();
     }
 
-    @Step
+    @Step("Calculating an arithmetic exercise")
     public static void calc_it(String exercise) {
         for(int index = 0; index < exercise.length(); index++) {
             if (Character.isDigit(exercise.charAt(index))) {
@@ -22,7 +22,7 @@ public class desktop_flows extends common_ops {
         UI_actions.click_without_waiting(_calc_page.getBtn_equals());
     }
 
-    @Step
+    @Step("Identify a number and send for click")
     public static void number_detection(int num) {
         switch (num) {
             case 1:
@@ -60,7 +60,7 @@ public class desktop_flows extends common_ops {
         }
     }
 
-    @Step
+    @Step("Identify a arithmetic action and send for click")
     public static void char_detection(char ch) {
         switch (ch) {
             case '+':

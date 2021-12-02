@@ -5,9 +5,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.asserts.SoftAssert;
-
 import java.util.List;
-import java.util.NoSuchElementException;
 
 import static org.testng.Assert.*;
 
@@ -31,27 +29,34 @@ public class verifications extends common_ops {
 
     @Step("Verify all actual texts is the same as expects text")
     public static void string_values(List<String> actual_texts, List<String> expected_texts, String massage) {
+        if (actual_texts == null || expected_texts == null) {
+            fail();
+        }
         soft_assert = new SoftAssert();
-        //null
         for (int index = 0; index < actual_texts.size() && index < expected_texts.size(); index++) {
             soft_assert.assertEquals(actual_texts.get(index), expected_texts.get(index), massage);
         }
         soft_assert.assertAll();
     }
 
-    @Step("Verify the text in element is the same as expected text")
+    @Step("Verify if element is exists in screen")
     public static void is_elem_exists(WebElement elem, Boolean expected_result, String massage) {
         wait.until(ExpectedConditions.visibilityOf(elem));
         is_elem_exists_without_wait(elem, expected_result, massage);
     }
 
-    @Step("Verify the text in element is the same as expected text")
+    @Step("Verify if element is exists in screen")
     public static void is_elem_exists_without_wait(WebElement elem, Boolean expected_result, String massage) {
         if (expected_result) {
             assertTrue(elem.isDisplayed(), massage);
-        }
-        else assertFalse(expected_result);
+        } else assertFalse(expected_result);
     }
 
-
+    @Step("Verify condition")
+    public static void verify_condition(boolean expected_result, boolean condition, String massage) {
+        if (expected_result) {
+            assertTrue(condition, massage);
+        }
+        else assertFalse(condition, massage);
+    }
 }

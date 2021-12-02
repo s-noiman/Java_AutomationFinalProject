@@ -13,13 +13,6 @@ import Extenstions.verifications;
 @Listeners(Utilities.listeners.class)
 public class Grafana_web extends common_ops {
 
-//    @Test(priority = 0, description = "Verify left side avatar image")
-//    @Description("Test Description: Verifing that the left side Avaza avatar image isn't change between tests")
-//    public void test07_visualTestingOfTheAvatar() {
-////        verifications.VisualElement(_login.grafana_icon, "Grafana_icon");
-//    }
-
-
     @Test(priority = 0, description = "Test01: Login Grafana website with credentials.")
     @Description("Test Description: Login Grafana Web Application.")
     public void login() throws FindFailed {

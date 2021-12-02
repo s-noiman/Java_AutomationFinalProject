@@ -18,6 +18,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 
 import org.w3c.dom.Document;
@@ -75,6 +76,7 @@ public class common_ops extends base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(get_data("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(get_data("Timeout")));
         action = new Actions(driver);
+        screen = new Screen();
     }
 
     public static WebDriver init_Chrome_driver() {
@@ -108,6 +110,7 @@ public class common_ops extends base {
     }
 
     public static void init_mobile() {
+        desired_capabilities = new DesiredCapabilities();
         desired_capabilities.setCapability(MobileCapabilityType.UDID, get_data("UDID"));
         desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, get_data("APP_PACKAGE"));
         desired_capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, get_data("APP_ACTIVITY"));
@@ -121,10 +124,11 @@ public class common_ops extends base {
         }
         wait = new WebDriverWait(mobile_driver, Long.parseLong(get_data("Timeout")));
         manage_pages.init_app();
-        t = new TouchAction(mobile_driver);
+        touch_action = new TouchAction(mobile_driver);
     }
 
     public static void init_desktop() throws MalformedURLException {
+        desired_capabilities = new DesiredCapabilities();
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities.setCapability("app", get_data("app"));
         windows_driver = new WindowsDriver(new URL("http://127.0.0.1:4723"), desired_capabilities);
@@ -141,6 +145,7 @@ public class common_ops extends base {
         opt.merge(desired_capabilities);
         driver = new ChromeDriver(opt);
         action = new Actions(driver);
+        integer = 0;
     }
 
 
@@ -179,7 +184,7 @@ public class common_ops extends base {
     @AfterMethod
     public void afterMethod() {
         if (platform.equalsIgnoreCase("api"))
-            verifications.number_value(http_request_status_code,  200, "Error in http requesting");
+            verifications.number_value(integer,  200, "Error in http requesting");
     }
 
     @AfterClass

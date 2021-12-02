@@ -14,8 +14,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -37,13 +37,6 @@
     </repositories>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.0.0</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -76,34 +69,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.googlecode.json-simple</groupId>
-            <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>3.3.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-java-commons</artifactId>
-            <version>2.16.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>3.141.59</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
@@ -116,41 +81,40 @@
         </dependency>
 
         <dependency>
-            <groupId>com.google.auto</groupId>
-            <artifactId>auto-common</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0</version>
+            <version>7.4.0</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>3.3.0</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
             <version>3.141.59</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.google.auto</groupId>
             <artifactId>auto-common</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
@@ -186,7 +150,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>execute_web.xml</suiteXmlFile>
+                                <suiteXmlFile>Executes.execute_web.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -207,7 +171,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>execute_api.xml</suiteXmlFile>
+                                <suiteXmlFile>Executes.execute_api.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -228,7 +192,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>execute_mobile.xml</suiteXmlFile>
+                                <suiteXmlFile>Executes.execute_mobile.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -249,7 +213,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>execute_desktop.xml</suiteXmlFile>
+                                <suiteXmlFile>Executes.execute_desktop.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -270,7 +234,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>execute_electron.xml</suiteXmlFile>
+                                <suiteXmlFile>Executes.execute_electron.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

@@ -1,14 +1,17 @@
 package Extenstions;
-import Utilities.auxiliary_methods;
+
 import Utilities.common_ops;
-import Utilities.manage_pages;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.sikuli.script.FindFailed;
+
+import java.time.Duration;
 
 public class UI_actions extends common_ops {
 
@@ -48,7 +51,7 @@ public class UI_actions extends common_ops {
     }
 
     @Step("Hover the mouse on a certain Element inorder to click secondary element")
-        public static Actions move_to_element(WebElement elem) {
+    public static Actions move_to_element(WebElement elem) {
         return action.moveToElement(elem);
     }
 
@@ -57,25 +60,29 @@ public class UI_actions extends common_ops {
         screen.click( get_data("ImageRepo") + img_name + ".png");
     }
 
-    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    @Step("Key down action")
     public static void key_down_action(String key) {
         action.keyDown(Keys.CONTROL).sendKeys(key).keyUp(Keys.CONTROL).perform();
     }
 
-    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    @Step("'Enter' action")
     public static void enter_action(Actions actions, String value) {
         actions.sendKeys(value, Keys.ENTER).build().perform();
     }
 
-    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    @Step("'Enter' action")
     public static void enter_action(WebElement elem, String value) {
         elem.sendKeys(value, Keys.ENTER);
     }
 
-    @Step("Hover the mouse on a certain Element inorder to click secondary element")
+    @Step("Double click on element")
     public static void double_click_action(Actions actions) {
         actions.doubleClick();
     }
 
-
+    @Step("Swipe screen")
+    public static void swipe() {
+        touch_action.press(PointOption.point(900, 300)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000))).
+                moveTo(PointOption.point(0, 400)).release().perform();
+    }
 }

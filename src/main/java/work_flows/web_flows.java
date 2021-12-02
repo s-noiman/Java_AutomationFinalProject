@@ -4,9 +4,7 @@ import Extenstions.DB_actions;
 import Extenstions.UI_actions;
 import Utilities.auxiliary_methods;
 import Utilities.common_ops;
-import Utilities.manage_pages;
 import io.qameta.allure.Step;
-import org.openqa.selenium.WebElement;
 import org.sikuli.script.FindFailed;
 
 import java.util.Arrays;
@@ -52,7 +50,7 @@ public class web_flows extends common_ops {
         return _personal_area.pageContainer.getCssValue("background-color");
     }
 
-    @Step
+    @Step("Change to dark background color.")
     public static void change_to_dark_mode() {
         UI_actions.click(_personal_area.darkThemeBtn);
         UI_actions.click(_personal_area.saveChangesBtn);
