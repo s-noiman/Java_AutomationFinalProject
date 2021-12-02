@@ -8,6 +8,7 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class common_ops extends base {
 
+    @Step("Get node data from Data_config.xml file")
     public static String get_data(String nodeName) {
         File fXmlFile;
         DocumentBuilderFactory dbFactory;
@@ -53,6 +55,7 @@ public class common_ops extends base {
         }
     }
 
+    @Step("Browser identification")
     public static void init_browser(String browserType) {
         switch (browserType.toLowerCase())
         {
@@ -79,36 +82,42 @@ public class common_ops extends base {
         screen = new Screen();
     }
 
+    @Step("Chrome browser initialization")
     public static WebDriver init_Chrome_driver() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         return driver;
     }
 
+    @Step("Firefox browser initialization")
     public static WebDriver init_FF_driver() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         return driver;
     }
 
+    @Step("Internet explorer browser initialization")
     public static WebDriver init_IE_driver() {
         WebDriverManager.iedriver().setup();
         WebDriver driver = new InternetExplorerDriver();
         return driver;
     }
 
+    @Step("Edge browser initialization")
     public static WebDriver init_Edge_driver() {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
         return driver;
     }
 
+    @Step("API initialization")
     public static void init_API() {
         RestAssured.baseURI = get_data("Grafana_API_URL");
         http_request = RestAssured.given();
         http_request_url = get_data("Grafana_API_URL");
     }
 
+    @Step("Mobile initialization")
     public static void init_mobile() {
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities.setCapability(MobileCapabilityType.UDID, get_data("UDID"));
@@ -127,6 +136,7 @@ public class common_ops extends base {
         touch_action = new TouchAction(mobile_driver);
     }
 
+    @Step("Desktop initialization")
     public static void init_desktop() throws MalformedURLException {
         desired_capabilities = new DesiredCapabilities();
         desired_capabilities = new DesiredCapabilities();
@@ -135,6 +145,7 @@ public class common_ops extends base {
         windows_driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
+    @Step("Electron initialization")
     public static void init_electron() {
         System.setProperty("webdriver.chrome.driver", get_data("ElectronDriverURL"));
         opt = new ChromeOptions();

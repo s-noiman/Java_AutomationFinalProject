@@ -1,9 +1,12 @@
 package Utilities;
 
+import io.qameta.allure.Step;
+
 import java.sql.DriverManager;
 
-public class manage_DB extends base{
+public class manage_DB extends base {
 
+    @Step("Initialization DB connection.")
     public static void init_DB_connection(String dbURL, String user, String password) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -15,6 +18,7 @@ public class manage_DB extends base{
         }
     }
 
+    @Step("Close DB connection.")
     public static void close_DB_connection() {
         try {
             connection.close();

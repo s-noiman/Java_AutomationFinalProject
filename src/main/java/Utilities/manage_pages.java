@@ -1,9 +1,11 @@
 package Utilities;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.PageFactory;
 
 public class manage_pages extends base
 {
+    @Step("Initialization pages.")
     public static void init()
     {
         //Web page objects initialization.
@@ -18,7 +20,7 @@ public class manage_pages extends base
         _todo = PageFactory.initElements(driver, Page_objects.Electron.todo_page.class);
     }
 
-    //Initializing mobile driver.
+    @Step("Initializing mobile driver.")
     public static void init_app()
     {
         _main_page = new Page_objects.Mobile.Main_page(mobile_driver);
