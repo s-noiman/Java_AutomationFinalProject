@@ -150,7 +150,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Executes.execute_web.xml</suiteXmlFile>
+                                <suiteXmlFile>execute_web.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -171,7 +171,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Executes.execute_api.xml</suiteXmlFile>
+                                <suiteXmlFile>execute_api.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -192,7 +192,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Executes.execute_mobile.xml</suiteXmlFile>
+                                <suiteXmlFile>execute_mobile.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -213,7 +213,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Executes.execute_desktop.xml</suiteXmlFile>
+                                <suiteXmlFile>execute_desktop.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -234,7 +234,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Executes.execute_electron.xml</suiteXmlFile>
+                                <suiteXmlFile>execute_electron.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
