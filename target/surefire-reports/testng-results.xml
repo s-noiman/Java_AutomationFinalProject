@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="38818" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:51 IST">
+    <groups>
+    </groups>
+    <test name="Mobile Tests" duration-ms="38818" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:51 IST">
+      <class name="Sanity_tests.ukMortgageCalc_mobile">
+        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="startSession" is-config="true" duration-ms="21881" started-at="2021-12-02T03:07:12 IST" finished-at="2021-12-02T03:07:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:34 IST" finished-at="2021-12-02T03:07:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Calculate_Values()[pri:1, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="Calculate_Values" duration-ms="7717" started-at="2021-12-02T03:07:34 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Calculate_Values -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyValues()[pri:2, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="verifyValues" duration-ms="832" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValues -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Delete_ASSIGMENT()[pri:3, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="Delete_ASSIGMENT" duration-ms="4155" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_ASSIGMENT -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:42 IST" finished-at="2021-12-02T03:07:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-02T03:07:47 IST" finished-at="2021-12-02T03:07:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:Sanity_tests.ukMortgageCalc_mobile@3bd94634]" name="closeSession" is-config="true" duration-ms="4178" started-at="2021-12-02T03:07:47 IST" finished-at="2021-12-02T03:07:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- Sanity_tests.ukMortgageCalc_mobile -->
+    </test> <!-- Mobile Tests -->
+  </suite> <!-- Suite -->
+</testng-results>
