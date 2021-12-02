@@ -2,7 +2,7 @@
 Hello,</br>
 This is our Automation Final Project.</br>
 we made this project to implement our automation skills that acquires in the "FullStack Automation Tester" course.</br>
-(By Yoni Flenner [Link to Google](https://atidcollege.co.il/))</br>
+([By Yoni Flenner](https://atidcollege.co.il/))</br>
 The project infrastructure was created from scratch.</br>
 This project was made on the "Grafana" platform. ("https://grafana.com/").</br>
 Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources
