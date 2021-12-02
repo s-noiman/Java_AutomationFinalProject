@@ -34,6 +34,7 @@ public class web_flows extends common_ops {
 
     @Step("Specific plugin searching.")
     public static void search_plugin(String search_text) {
+        navigate_to_personal_area();
         UI_actions.click(_personal_area.configurationBtn);
         UI_actions.click(_personal_area.Plug);
         auxiliary_methods.sleep(3);

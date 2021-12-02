@@ -23,7 +23,6 @@ public class Grafana_web extends common_ops {
     @Test(priority = 1, description = "Test02: Plugin searching.")
     @Description("Test Description:  Verify plugin searching result.")
     public void verify_plugin_searching_result() {
-        web_flows.navigate_to_personal_area();
         web_flows.search_plugin("AJAX");
         web_flows.verify_search_action(true);
     }
