@@ -9,7 +9,7 @@ public class manage_DB extends base {
     @Step("Initialization DB connection.")
     public static void init_DB_connection(String dbURL, String user, String password) {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName(manage_DDT.get_data("ClassName"));
             connection = DriverManager.getConnection(dbURL, user, password);
             stmt = connection.createStatement();
         }
