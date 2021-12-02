@@ -81,8 +81,7 @@ public class Main_page {
     @FindBy(xpath = "//*[@id='button1']")
     private AndroidElement POPUP;
 
-    public Main_page(AppiumDriver mobileDriver)
-    {
+    public Main_page(AppiumDriver mobileDriver) {
         PageFactory.initElements(new AppiumFieldDecorator(mobileDriver), this);
     }
 

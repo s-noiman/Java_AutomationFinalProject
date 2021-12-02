@@ -1,6 +1,7 @@
 package Sanity_tests;
 
 import Extenstions.DB_actions;
+import Utilities.base;
 import Utilities.common_ops;
 import io.qameta.allure.Description;
 import org.openqa.selenium.support.Color;
@@ -35,7 +36,7 @@ public class Grafana_web extends common_ops {
     @Description("Test Description: Change the user background colors settings.")
     public void change_to_light_background_color() {
         web_flows.change_to_light_background_color();
-        web_flows.verify_screen_mode("#ffffff");
+        web_flows.verify_screen_mode(white_hex_color);
     }
 
     @Test(priority = 4, testName = "Test05: Log out the site")

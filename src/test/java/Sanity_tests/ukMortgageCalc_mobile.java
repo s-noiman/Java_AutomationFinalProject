@@ -27,7 +27,7 @@ public class ukMortgageCalc_mobile extends common_ops {
     @Test(priority = 2, description = "Test03: Delete and save")
     @Description("Test description: Delete The Saved Data File . (Swipe Feature submitted)")
     public void Delete_ASSIGMENT() {
-        UI_actions.swipe(PointOption.point(900, 300), PointOption.point(0, 400), 1000);
+        UI_actions.swipe();
         mobile_flows.Delete_Assignment();
         mobile_flows.verify_delete_assignment(false, "Calculator was not deleted.");
     }

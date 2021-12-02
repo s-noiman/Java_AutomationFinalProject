@@ -24,11 +24,13 @@ public class Calculator_page {
 
     @FindBy(xpath = "//*[@AutomationId='clearButton']")
     private WebElement btn_clear;
+
     @FindBy(xpath = "//*[@AutomationId='CalculatorResults']")
     private WebElement txt_calculator_result;
 
     @FindBy(name = "Zero")
     private WebElement btn_zero;
+
     @FindBy(name = "One")
     private WebElement btn_one;
 

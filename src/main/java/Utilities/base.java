@@ -33,6 +33,7 @@ public class base {
     protected static SoftAssert soft_assert;
     protected static Screen screen;
     protected static DesiredCapabilities desired_capabilities;
+    protected static final String white_hex_color = "#ffffff";
 
     protected static AndroidDriver<AndroidElement> mobile_driver;
     protected static TouchAction touch_action;

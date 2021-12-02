@@ -90,6 +90,7 @@ public class common_ops extends base {
         RestAssured.baseURI = get_data("Grafana_API_URL");
         http_request = RestAssured.given();
         http_request_url = get_data("Grafana_API_URL");
+        auxiliary_methods.init_http_response();
     }
 
     @Step("Mobile initialization")
@@ -164,13 +165,14 @@ public class common_ops extends base {
     public void beforeMethod() {
         if (platform.equalsIgnoreCase("desktop"))
             UI_actions.click_without_waiting(_calc_page.getBtn_clear());
-
     }
 
     @AfterMethod
     public void afterMethod() {
-        if (platform.equalsIgnoreCase("api"))
+        if (platform.equalsIgnoreCase("api")) {
+            auxiliary_methods.update_response_status_code(response.getStatusCode());
             verifications.number_value(integer, Integer.parseInt(get_data("StatusCode")), "Error in http requesting");
+        }
     }
 
     @AfterClass

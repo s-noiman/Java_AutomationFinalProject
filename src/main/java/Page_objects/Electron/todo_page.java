@@ -14,6 +14,7 @@ public class todo_page {
     @FindBy(css = "body > div > div.transition_1AwoP > div.wrapper_DtvJU > div:nth-child(2) > div > div > div")
     private List<WebElement> todos_list;
 
+    @Step("Get tasks list")
     public List<WebElement> getTodos_list() {
         return todos_list;
     }
