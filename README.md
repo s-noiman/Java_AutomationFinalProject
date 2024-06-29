@@ -37,7 +37,7 @@ The logging credentials are stored in Data Base, by "[freemysqlhosting **Website
 
 
 
-<h1>Powered By :</h1>
+
 <div style="display: flex;">
 <img style="width: 300px; height:100px;" src="https://cdn.icon-icons.com/icons2/2699/PNG/128/grafana_logo_icon_171049.png">
 <img style="width: 100px; height: 100px;" src="https://img.icons8.com/officel/2x/selenium-test-automation.png"><br/>
