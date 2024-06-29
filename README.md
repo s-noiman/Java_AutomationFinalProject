@@ -15,7 +15,7 @@
  
 Hello,</br>
 This is our Automation Final Project.</br>
-we made this project to implement our automation skills that acquires in the "FullStack Automation Tester" course.</br>
+we made this project to implement our automation skills that acquires in the "QA Automation" course.</br>
 ([By Yoni Flenner](https://atidcollege.co.il/))</br>
 The project infrastructure was created from scratch.</br>
 This project was made on the "Grafana" platform. ([Grafana](https://grafana.com/)).</br>
